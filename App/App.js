@@ -1,24 +1,18 @@
 import React, { Component } from 'react'
-import { TouchableWithoutFeedback, View, StatusBar, Text } from 'react-native'
+import { View, StatusBar } from 'react-native'
 import Animation from 'lottie-react-native'
 
-class App extends Component {
-  pressStar = () => {
-    this.animation.play()
-  }
+import LottieExample from './Examples/LottieExample'
+import ButtonExample from './Examples/ButtonExample'
+import AnimatedExample from './Examples/AnimatedExample'
+import SliderExample from './Examples/SliderExample'
 
+class App extends Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <View>
-          <TouchableWithoutFeedback onPress={this.pressStar}>
-            <Animation
-              style={{ width: 200, height: 200 }}
-              source={require('./Animations/FavouriteAppIcon')}
-              ref={animation => { this.animation = animation }}
-            />
-          </TouchableWithoutFeedback>
-        </View>
+      <View style={{ flex: 1 }}>
+        <StatusBar hidden />
+        <SliderExample />
       </View>
     )
   }
