@@ -1,0 +1,8 @@
+## Building.json
+Author unknown: http://www.lottiefiles.com/59-building-animation
+
+## FavouriteAppIcon.json
+By @MVHarvey : http://www.lottiefiles.com/72-favourite-app-icon
+
+## Lottie.json
+Lottie animated logo by Airbnb : https://github.com/airbnb/lottie-react-native
